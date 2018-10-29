@@ -3,7 +3,7 @@ class Song < ActiveRecord::Base
   belongs_to :genre
   has_many :notes
 
-  def artist_name
+  def artist_name #convenience attribute on a model 
       self.try(:artist).try(:name)
   end
 
