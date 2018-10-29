@@ -17,7 +17,7 @@ class Song < ActiveRecord::Base
   end
 
   def genre=(name)
-    genre = Genre.find_or_create_by(id: id)
+    genre = Genre.find_or_create_by(name: name)
     self.genre = genre
   end
 
