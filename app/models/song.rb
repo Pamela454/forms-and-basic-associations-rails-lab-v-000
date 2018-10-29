@@ -12,8 +12,8 @@ class Song < ActiveRecord::Base
     self.artist = artist
   end
 
-  def genre
-      self.try(:genre).try(:id)
+  def genre_name
+      self.try(:genre).try(:name)
   end
 
   def genre=(genre)
